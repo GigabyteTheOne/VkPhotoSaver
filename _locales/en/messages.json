@@ -1,0 +1,58 @@
+{
+	"chrome_extension_description":
+	{
+		"message": "Allows you to send pictures through VK messages"
+	},
+	"context_menu_item_title":
+	{
+		"message": "Send image through VK message"
+	},
+	"upload_page_title":
+	{
+		"message": "Image sending through VK messages"
+	},
+	"upload_send_text_title":
+	{
+		"message": "Enter message text"
+	},
+	"upload_send_button_title":
+	{
+		"message": "Send"
+	},
+	"upload_friends_loader_text":
+	{
+		"message": "Friend list loading..."
+	},
+	"upload_dialogs_loader_text":
+	{
+		"message": "Dialogs loading..."
+	},
+	"upload_image_loader_text":
+	{
+		"message": "Image loading..."
+	},
+	"lang":
+	{
+		"message": "en"
+	},
+	"error_message_title":
+	{
+		"message": "Oh, there's some error :("
+	},
+	"search_input_placeholder":
+	{
+		"message": "Begin type a friend name"
+	},
+	"not_found":
+	{
+		"message": "Not found"
+	},
+	"nav_bar_tab1_text":
+	{
+		"message": "Friends"
+	},
+	"nav_bar_tab2_text":
+	{
+		"message": "Dialogs"
+	}
+}

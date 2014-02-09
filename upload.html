@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>VK Image Sender</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="upload.js"></script>
+		<script type='text/javascript' src='jquery.min.js'></script>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			#commandInput {
+				width: 95%;
+			}
+		</style>
+	</head>
+<body>
+	<div class="container" id="error_message" style="margin-top: 30px; display:none">
+	</div>
+
+	<div class="container" style="padding-top: 10px; display: none;" id="main_content">
+		<input type="text" class="form-control" id="commandInput" value="https://api.vk.com/method/photos.get?uid=132185825&aid=169740147&limit=1"/>
+		<button class="btn btn-primary" id="runButton">Run</button>
+		<div id="resultDiv">
+		</div>
+	</div>
+
+	<div class="container" style="padding-top: 10px" id="checkPhotoContent">
+		<label for="albumIdInput">ID группы (опционально)</label>
+		<input type="text" class="form-control" id="gidInput" value="54308541"/>
+		<label for="albumIdInput">ID альбома</label>
+		<input type="text" class="form-control" id="albumIdInput" value="185780377"/>
+		<label for="albumIdInput">ID группы, из которой тырить (опционально)</label>
+		<input type="text" class="form-control" id="secondGidInput" value="27659435"/>
+		<label for="albumIdInput">ID альбома, из которого тырить</label>
+		<input type="text" class="form-control" id="secondAlbumId" value="136429908"/>
+		
+		<button class="btn btn-primary" id="checkPhotoUrls">Проверить ссылки</button>
+    	<button class="btn btn-primary" id="loadPhoto">Вывести все ссылки на фото</button>
+    	<button class="btn btn-primary" id="syncCaptions">Стырить описания</button>
+		<div id="checkPhotoResultDiv">
+		</div>
+	</div>
+
+
+	<div id="captchaForm" class="modal fade" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h3 class="modal-title">Введите код</h3>
+        </div>
+        <div class="modal-body">
+        	<div class="text-center">
+        		<img id="captchaImg" src="">
+        	</div>
+          <label for="captchaText"></label>
+          <input type="text" id="captchaText" class="form-control">
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" id="captchaOk">OK</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</body>
+</html>
